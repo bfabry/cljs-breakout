@@ -11,11 +11,12 @@ goog.addDependency("../cljs/core/async/impl/ioc_helpers.js", ['cljs.core.async.i
 goog.addDependency("../cljs/core/async/impl/channels.js", ['cljs.core.async.impl.channels'], ['cljs.core.async.impl.buffers', 'cljs.core', 'cljs.core.async.impl.dispatch', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async/impl/timers.js", ['cljs.core.async.impl.timers'], ['cljs.core', 'cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.async.impl.ioc_helpers', 'cljs.core.async.impl.buffers', 'cljs.core', 'cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core.async.impl.protocols', 'cljs.core.async.impl.timers']);
+goog.addDependency("../breakout/linalg.js", ['breakout.linalg'], ['cljs.core']);
 goog.addDependency("../clojure/string.js", ['clojure.string'], ['cljs.core', 'goog.string', 'goog.string.StringBuffer']);
 goog.addDependency("../clojure/set.js", ['clojure.set'], ['cljs.core']);
 goog.addDependency("../crate/binding.js", ['crate.binding'], ['cljs.core', 'clojure.set']);
 goog.addDependency("../crate/compiler.js", ['crate.compiler'], ['cljs.core', 'goog.dom', 'clojure.string', 'crate.binding', 'goog.style']);
 goog.addDependency("../crate/util.js", ['crate.util'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../crate/core.js", ['crate.core'], ['crate.util', 'cljs.core', 'goog.dom', 'crate.compiler']);
-goog.addDependency("../breakout/game.js", ['breakout.game'], ['cljs.core']);
+goog.addDependency("../breakout/game.js", ['breakout.game'], ['breakout.linalg', 'cljs.core']);
 goog.addDependency("../breakout/core.js", ['breakout.core'], ['cljs.core', 'goog.dom', 'breakout.game', 'clojure.browser.repl', 'crate.core', 'cljs.core.async', 'goog.style', 'goog.events']);
