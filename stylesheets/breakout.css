@@ -1,0 +1,4 @@
+div {position: absolute; display: block;}
+div.breakout {background-color: black;}
+div.player {background-color: red;}
+div.ball {background-color: yellow;}
