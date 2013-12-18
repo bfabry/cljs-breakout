@@ -8,7 +8,7 @@ Goals:
 
 * Fast decent TDD at least for the core logic, with autotest
 * Fast automatic compilation to cljs
-* Play with core.async, separate i/o, presentation, and logic.
+* Play with David Nolen's description of separating events and logic with core.async
 
 To make go:
 -----------
